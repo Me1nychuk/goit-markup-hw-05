@@ -480,7 +480,7 @@
             autocomplete="off"
             novalidate
           >
-            <label>
+            <label class="label-email">
               <input
                 class="email-input-sub"
                 type="email"
@@ -506,6 +506,23 @@
             <use href="./images/form/icons-form.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form
+          class="form-modal"
+          name="modal-form"
+          autocomplete="off"
+          novalidate
+        >
+          <div class="input-div">
+            <label class="label-title" for="user-name">Name</label>
+            <div class="input-section">
+              <input class="modal-input" type="text" name="" id="user-name" />
+              <svg class="icon-modal-input" width="18" height="24">
+                <use href="./images/form/icons-form.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </body>
