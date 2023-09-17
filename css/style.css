@@ -4,6 +4,7 @@
   --slate: #434455;
   --iris_2: #404bbf;
   --light-slate: #8e8f99;
+  --light: #f4f4fd;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -253,14 +254,14 @@ a.nav-list-item {
   align-items: center;
   justify-content: center;
   height: 112px;
-  background: #f4f4fd;
+  background: var(--light);
   border-radius: 4px;
   border: 1px solid var(--light-slate);
   margin-bottom: 8px;
 }
 /* section_03  */
 .section-third {
-  background: #f4f4fd;
+  background: var(--light);
   text-align: center;
 }
 
@@ -319,7 +320,7 @@ a.employee-link:focus {
   background-color: #404bbf;
 }
 .emp-icon {
-  fill: #f4f4fd;
+  fill: var(--light);
 }
 .employee .section-list-text {
   margin-bottom: 8px;
@@ -367,7 +368,7 @@ a.employee-link:focus {
 .section-fourth-list-text {
   position: absolute;
   top: 0;
-  color: #f4f4fd;
+  color: var(--light);
   font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.32px;
@@ -387,10 +388,10 @@ a.employee-link:focus {
 }
 
 .logo-second-two {
-  color: #f4f4fd;
+  color: var(--light);
 }
 .footer-text {
-  color: #f4f4fd;
+  color: var(--light);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px; /* 150% */
@@ -435,7 +436,7 @@ a.footer-link:focus {
   background-color: #31d0aa;
 }
 .ftr-icon {
-  fill: #f4f4fd;
+  fill: var(--light);
 }
 .ftr-media {
   color: #fff;
@@ -615,4 +616,40 @@ a.footer-link:focus {
 }
 .textarea:focus {
   border-color: #4d5ae5;
+}
+
+.checkbox-div {
+  margin-bottom: 24px;
+}
+
+.checkbox-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+}
+
+.checkbox-span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
+}
+
+.checkbox:checked .checkbox-span {
+  background-color: var(--iris_2);
+  border: none;
+  fill: var(--light);
+}
+
+.checkbox-link {
+  color: var(--iris);
+  text-decoration: underline;
 }
