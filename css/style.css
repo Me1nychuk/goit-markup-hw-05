@@ -622,7 +622,7 @@ a.footer-link:focus {
   margin-bottom: 24px;
 }
 
-.checkbox:checked + .label-class > .span-class {
+input.checkbox:checked + .checkbox-label > .span-class {
   background-color: #404bbf;
   border: none;
   fill: #ffffff;
