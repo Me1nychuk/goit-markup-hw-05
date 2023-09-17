@@ -586,13 +586,14 @@ a.footer-link:focus {
   fill: var(--navyblue);
 }
 
-.modal-input:hover .icon-modal-input {
-  fill: #4d5ae5;
-}
+.modal-input:hover .icon-modal-input,
 .modal-input:focus .icon-modal-input {
   fill: #4d5ae5;
 }
-
+.modal-input:hover,
+.modal-input:focus {
+  border-color: #4d5ae5;
+}
 .input-div:nth-child(4) {
   margin-bottom: 16px;
 }
@@ -608,4 +609,10 @@ a.footer-link:focus {
   padding: 8px 16px;
   resize: none;
   border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.textarea:focus {
+  border-color: #4d5ae5;
 }
