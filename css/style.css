@@ -586,8 +586,8 @@ a.footer-link:focus {
   fill: var(--navyblue);
 }
 
-.input-section:hover .icon-modal-input,
-.input-section:focus .icon-modal-input {
+.modal-input:hover:hover + .icon-modal-input,
+.modal-input:hover:focus + .icon-modal-input {
   fill: #4d5ae5;
 }
 .modal-input:hover,
