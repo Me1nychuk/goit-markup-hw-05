@@ -10,7 +10,7 @@ body {
   font-family: "Roboto", sans-serif;
   background: #fff;
   color: var(--slate);
-  width: 1440px;
+
   margin: 0 auto;
 }
 a {
@@ -178,6 +178,7 @@ a.nav-list-item {
   flex-shrink: 0;
   padding: 188px 0;
   max-width: 1440px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -491,7 +492,6 @@ a.footer-link:focus {
 
 /* Form */
 .backdrop {
-  display: block;
   position: fixed;
   top: 0;
   left: 0;
