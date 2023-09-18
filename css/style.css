@@ -491,6 +491,7 @@ a.footer-link:focus {
 
 /* Form */
 .backdrop {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
